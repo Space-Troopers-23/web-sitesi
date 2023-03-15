@@ -90,7 +90,20 @@ body{
  .post-detail-container p{
    font-weight: 300;
    font-size: 18px;
-   transform: translateY(100px);
+   transform: translateY(40px);
+   color: #fff;
+   
+ }
+ .post-detail-container .post-date{
+   font-weight: 600;
+   font-size: 14px;
+   
+   color: #fff;
+   
+ }
+ .post-detail-container .post-writer{
+   font-size: 14px;
+   
    color: #fff;
    
  }
