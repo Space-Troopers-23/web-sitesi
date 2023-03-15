@@ -57,7 +57,7 @@ body{
  }
 section{
    position: relative;
-   transform: translateY(-1200px);
+   transform: translateY(-1000px);
 }
 section h2{
    color: #fff;
