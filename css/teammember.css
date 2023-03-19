@@ -56,7 +56,7 @@ body{
     color: #8A2219;
  }
 section{
-   position: relative;
+   position: absolute;
    transform: translateY(-1000px);
 }
 section h2{
@@ -146,4 +146,28 @@ section::before{
 .container .sci li a{
    color:#fff ;
    font-size: 24px;
+}
+
+@media  screen and (max-width: 1180px) {
+   section{
+       transform: translateY(180px);
+       align-items: center;
+       justify-content: center;
+       text-align: center;
+
+   
+}
+}
+@media  screen and (max-width: 650px) {
+   section{
+      transform: translateY(180px);
+      align-items: center;
+      justify-content:center ;
+      text-align: center;
+   }
+   section h2{
+      
+      text-align: center;
+      justify-content: center;
+   }
 }
