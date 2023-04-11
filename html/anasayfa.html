@@ -7,14 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hacettepe Space Troopers</title>
     <link rel="shortcut icon" type="image/png" href="../images/favicon.png">
+    <script src="https://kit.fontawesome.com/2a3c308efc.js" crossorigin="anonymous"></script>
+   
     
 </head>
 <body>
     <header>
-       <a href="./anasayfa.html" class="logo">
+        <div class="navbar">
+            <div class="logo"> <img src="../images/logobeyaz.png"  height="70px" alt=""></a></div>
+            <ul class="links">
+              <li><a href="./anasayfa.html">Home</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="./teammembers.html">Team Members</a></li>
+              <li><a href="./blog.html">Our Blog</a></li>
+            </ul>
+            <a href="./loginpage.html" class="action_btn">Log In</a>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="dropdown_menu">
+            <li><a href="./anasayfa.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="./teammembers.html">Team Members</a></li>
+            <li><a href="./blog.html">Our blog</a></li>
+            <li><a href="./loginpage.html" class="action_btn">Log In</a></li>
+          </div>
+        </header>
+      </body>
+      
+       <!--<a href="./anasayfa.html" class="logo">
         <img src="../images/logobeyaz.png" height="70px" alt="">
        </a>
-            <ul>
+       <div class="navbar">
+            <ul class="links">
                 <li> <a href="./anasayfa.html" class="active">Home</a></li>
                 <li> <a href="./aboutus.html">About Us</a></li>
                 <li> <a href="#">Sponsors</a></li>
@@ -22,7 +50,26 @@
                 <li> <a href="blog.html">Our Researches & Blog</a></li>
                 <li> <a href="./loginpage.html" class="active" target="_blank">Log In</a></li>
             </ul>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </div>
+     </div>
+            <div class="dropdown_menu">
+                
+                
+                    <li> <a href="./anasayfa.html" class="active">Home</a></li>
+                    <li> <a href="./aboutus.html">About Us</a></li>
+                    <li> <a href="#">Sponsors</a></li>
+                    <li> <a href="./teammembers.html">Team Members</a></li>
+                    <li> <a href="blog.html">Our Researches & Blog</a></li>
+                    <li> <a href="./loginpage.html" class="active" target="_blank">Log In</a></li>
+                
+
+            </div> -->
     </header>
+    
+        
+    
     
     <section>
         <img src="../images/arkaplan.png" id="uzay" width="1490px">
@@ -50,6 +97,19 @@
     <div class="copyright">
         <small> Copyright © </small>
     </div>
-    
+    <script> 
+        const toggleBtn = document.querySelector(".toggle_btn")
+const toggleBtnIcon = document.querySelector(".toggle_btn i")
+const dropDownMenu = document.querySelector(".dropdown_menu")
+
+toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle("open")
+  const isOpen = dropDownMenu.classList.contains("open")
+
+  toggleBtnIcon.classList = isOpen 
+    ? "fa-solid fa-xmark" : 
+  "fa-solid fa-bars";
+}
+    </script> 
 </body>
 </html>

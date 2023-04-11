@@ -12,17 +12,28 @@
 </head>
 <body>
     <header>
-        <a href="./anasayfa.html" class="logo">
-         <img src="../images/logobeyaz.png" height="70px" alt="">
-        </a>
-             <ul>
-                <li> <a href="./anasayfa.html" class="active">Home</a></li>
-                <li> <a href="./aboutus.html">About Us</a></li>
-                <li> <a href="#">Sponsors</a></li>
-                <li> <a href="./teammembers.html">Team Members</a></li>
-                <li> <a href="blog.html">Our Researches & Blog</a></li>
-                <li> <a href="./loginpage.html" class="active" target="_blank">Log In</a></li>
-             </ul>
+        <div class="navbar">
+            <div class="logo"> <img src="../images/logobeyaz.png"  height="70px" alt=""></a></div>
+            <ul class="links">
+              <li><a href="./anasayfa.html">Home</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="./teammembers.html">Team Members</a></li>
+              <li><a href="./blog.html">Our Blog</a></li>
+            </ul>
+            <a href="./loginpage.html" class="action_btn">Log In</a>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+          <div class="dropdown_menu">
+            <li><a href="./anasayfa.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="./teammembers.html">Team Members</a></li>
+            <li><a href="./blog.html">Our blog</a></li>
+            <li><a href="./loginpage.html" class="action_btn">Log In</a></li>
+          </div>
      </header>
     <section>
         <h2>Software Team</h2>
@@ -134,5 +145,19 @@
             </ul></div>
             
     </section>
+    <script> 
+        const toggleBtn = document.querySelector(".toggle_btn")
+const toggleBtnIcon = document.querySelector(".toggle_btn i")
+const dropDownMenu = document.querySelector(".dropdown_menu")
+
+toggleBtn.onclick = function () {
+  dropDownMenu.classList.toggle("open")
+  const isOpen = dropDownMenu.classList.contains("open")
+
+  toggleBtnIcon.classList = isOpen 
+    ? "fa-solid fa-xmark" : 
+  "fa-solid fa-bars";
+}
+    </script> 
 </body>
 </html>
