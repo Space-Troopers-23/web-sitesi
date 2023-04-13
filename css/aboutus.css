@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     min-height: 100vh;
-    background: linear-gradient(#8A2219,#F1AD4A);
+    background: linear-gradient(#141733,#3c3e6b);
+    /*background: linear-gradient(#040823,#2766B6);*/
     
 
 }
@@ -23,7 +24,7 @@ body{
   }
   
   a:hover{
-    color:#8A2219;
+    color:#141733;
     background-color: #fff;
     padding:0.5rem 1rem;
     border:none;
@@ -83,13 +84,13 @@ body{
     border-radius:20px;
     font-size:1rem;
     font-weight:bold;
-    color: #8A2219;
+    color: #141733;
   }
   
   .action_btn:hover{
     color:#fff;
     scale:1.05;
-    background-color: #8A2219;
+    background-color: #4d89d7;
   }
   .action_btn:active{
     scale:0.95;
@@ -173,7 +174,7 @@ body{
     justify-content: space-around;
  }
  .text h1{
-    color: #f0b356;
+    color: #4d89d7;
     font-size: 85px;
     margin-bottom: 20px;
     text-transform: capitalize;
@@ -213,28 +214,26 @@ body{
     }
 }
 footer{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    text-align: center;
-    background-color: #8A2219;
-    color: #fff;
-    transform: translateY(200px);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background-color: #141733;
+  color: #fff;
 }
 footer li{
-    display: inline-block;
-    margin-right: 1rem;
-    margin-top: 1.5rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
 
 }
 footer h4{
-    font-size: 1.5rem;
-    
+  font-size: 1.5rem;
+  
 }
 .copyright{
-    padding-top: 4px;
-    padding-bottom: 4px;
-    background-color: #8A2219;
-    color: #fff;
-    text-align: center;
-    transform: translateY(200px);
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #141733;
+  color: #fff;
+  text-align: center;
 }
