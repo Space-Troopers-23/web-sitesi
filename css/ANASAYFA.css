@@ -14,17 +14,17 @@ body{
   }
   
   
-  li{
+  header li{
     list-style:none;
   }
   
-  a{
+  header a{
     text-decoration:none;
     color:white;
   }
   
-  a:hover{
-    color:#2b1055;
+  header a:hover{
+    color:#141733;
     background-color: #fff;
     padding:0.5rem 1rem;
     border:none;
