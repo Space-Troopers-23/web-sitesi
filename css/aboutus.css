@@ -116,8 +116,8 @@ body{
     justify-content:center;
     align-items:center;
   }
-  .dropdown_menu .open{
-    height:240px
+  .dropdown_menu.open{
+    height:340px
   }
   
   .dropdown_menu .action_btn{
@@ -145,6 +145,7 @@ body{
       width:unset;
     }
   }
+  
   /*header bitiş*/
  .about{
     width: 100%;
